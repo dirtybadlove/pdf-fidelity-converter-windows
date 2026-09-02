@@ -1,5 +1,7 @@
 # PDF 原版保真转换器
 
+[简体中文](README.md) | [English](README.en.md) | [日本語](README.ja.md)
+
 一个本地运行的 Windows PDF 批量转换工具，可输出固定版式 EPUB、DOCX、旧版二进制 DOC，也可选输出 TXT。
 
 ## 最重要的结论
