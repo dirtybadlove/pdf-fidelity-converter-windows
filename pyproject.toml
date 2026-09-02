@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-content-converter"
+version = "0.3.0"
+description = "Local fidelity-first PDF to EPUB, DOCX and DOC converter"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "PDF Content Converter contributors" }]
+dependencies = [
+  "Pillow>=10.0",
+  "pypdf>=5.0",
+  "pypdfium2>=4.30",
+  "python-docx>=1.1",
+]
+
+[project.optional-dependencies]
+dev = ["reportlab>=4.0"]
+
+[project.scripts]
+pdf-full-convert = "pdf_content_converter.cli:main"
+pdf-full-convert-gui = "pdf_content_converter.gui:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
